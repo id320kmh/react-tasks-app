@@ -1,0 +1,13 @@
+export const ADD_TASK = 'TASK/CREATE_TASK';
+export const FETCH_TASKS = 'TASK/FETCH_TASKS';
+
+export const SHOW_LOADER = 'TASK/SHOW_LOADER';
+export const HIDE_LOADER = 'TASK/HIDE_LOADER';
+
+export const SHOW_ALERT = 'TASK/SHOW_ALERT';
+export const HIDE_ALERT = 'TASK/HIDE_ALERT';
+
+export const CHANGE_COMPLETED = 'TASK/CHANGE_COMPLETED';
+export const DELETE_TASK = 'TASK/DELETE_TASK';
+
+export const CHANGE_FILTER = 'FILTER/CHANGE_FILTER';

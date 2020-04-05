@@ -1,7 +1,10 @@
 import React from 'react';
-import Header from './Header';
+import Todo from '../../containers/Todo/Todo';
 
-function Section({fullscreen}) {
+
+function Home() {
+
+    const fullscreen = true;
 
     const sectionClassList = fullscreen ? 'section fullscreen' : 'section';
 
@@ -14,7 +17,9 @@ function Section({fullscreen}) {
         fullscreen: {
             width: '100%',
             minHeight: '100vh',
-            backgroundColor: '#ddd'
+            backgroundColor: '#ddd',
+            position: 'absolute',
+            paddingTop: '100px'
         }
     }
 
@@ -23,9 +28,9 @@ function Section({fullscreen}) {
             className={sectionClassList} 
             style={fullscreen ? sectionStyles.fullscreen : sectionStyles.section}
         >
-            <Header headerInitialHeight={80}></Header>
+            <Todo></Todo>
         </div>
     )
 }
 
-export default Section;
+export default Home;

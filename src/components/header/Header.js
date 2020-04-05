@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logoUrl from '../assets/images/logo.png';
+import logoUrl from '../../assets/images/logo.png';
 
 function Header({headerInitialHeight}) {
 
@@ -13,7 +13,8 @@ function Header({headerInitialHeight}) {
             width: '100%',
             height: `${headerHeight}px`,
             backgroundColor: '#222',
-            overflow: 'hidden'
+            overflow: 'hidden',
+            zIndex: 50
         },
 
         mainHeader__row: {

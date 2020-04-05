@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
+import Header from './components/header/Header';
+import 'typeface-roboto';
 
-// imports my Components 
-import Section from './components/Section';
 
-//\
 
-function App() {
+function App({children}) {
   return (
     <div className="App">
-      <Section fullscreen={true}></Section>
+      <Header headerInitialHeight={80}></Header>
+      {children}
+      {/* <Section fullscreen={true}></Section> */}
     </div>
   );
 }
